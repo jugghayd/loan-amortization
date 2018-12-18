@@ -1,0 +1,44 @@
+body{
+
+  background:gray;
+}
+
+#headline{
+  text-align:center;
+}
+
+
+.container{
+  background:white;
+}
+
+#loan_src{
+  float:left;
+  width:50%;
+  height:220px;
+  margin-bottom:10px;
+  text-align:left;
+  //background:tomato;
+}
+
+#loan_info{
+  float:right;
+  width:50%;
+  //background:green;
+  height:230px;
+  margin-bottom:10px;
+}
+
+#table_header {
+  clear:both;
+  //width:600px;
+  //height:50px;
+  background:maroon;
+  text-align:center;
+}
+
+#table {
+  overflow:auto;
+  max-height:500px;
+  text-align:center;
+}

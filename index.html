@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Full Stack Conf</title><!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport"><!-- Bootstrap CSS -->
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="css/custom.css">
+  <script src="js/main.js">
+
+  </script>
+</head>
+
+<body>
+  <div class="container">
+    <h2 id="headline">Loan Amortization Calculator</h2>
+
+    <div id="loan_src"><!-- loan form goes here -->
+      <form name="loan_form">
+        <table style="margin:10px;" >
+          <tr>
+            <td>Loan amount:</td>
+            <td><input type="text" name ="loan_amt" size="10"/></td>
+          </tr>
+          <tr>
+            <td>Number of Months:</td>
+            <td><input type="text" name="months" size="10" /></td>
+          </tr>
+           <tr>
+             <td>Annual Interest Rate: </br><span style="font-size:80%;">(e.g. 4.5% = 4.5)</span></td>
+            <td><input type="text" name="rate" size="10" /></td>
+          </tr>
+          <tr>
+            <td>Extra Monthly Payment:</td>
+            <td><input type="text" name="extra" size="10" value="0" /></td>
+          </tr>
+
+          <tr>
+            <td><input type="button" onclick="validate()" value="Calculate" /></td>
+            <td><input type="button" onclick="startOver()" value="Start Over" /></td>
+          </tr>
+
+               </table>
+      </form>
+    </div>
+
+    <div  id="loan_info"><!-- loan info will be displayed here -->
+
+    </div>
+
+  <div class="clearfix"></div>
+
+      <div id="table_header">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col" style="width:10%;"><strong>Payment #</strong></th>
+              <th scope="col" style="width:16%;"align="center"><strong>Payment Amount</strong</th>
+              <th scope="col" style="width:16%;"align="center"><strong>Principal</strong></th>
+              <th scope="col" style="width:16%;"align="center"><strong>Interest</strong></th>
+              <th scope="col" style="width:20%;"align="center"><strong>Total Interest Paid</strong></th>
+              <th scope="col" style="width:20%;"align="center"><strong>Balance</strong></th>
+
+            </tr>
+          </thead>
+
+        </table>
+
+      </div>
+      <div id="table">
+
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
